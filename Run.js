@@ -31,7 +31,8 @@ bot.on('message', function (message){
                         message.channel.send('``2) r!evil = respond : rate the evil of smth/someone``');
                         message.channel.send('``3) who is belle? = respond with "its my wife and a pic of belle``'); 
                         message.channel.send('``4) i will trap her in a tower respond with : "NOOOOOOOO!"``');
-                        
+                        message.channel.send('``5) type r!random ouat = Say a random name from once upon a time``');
+		    
             break;
 	
 	case "r!random ouat" : ouate = Math.floor(Math.random() * (ouat.length - 0) + 0);  
