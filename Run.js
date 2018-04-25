@@ -29,6 +29,10 @@ bot.on('message', function (message){
                         message.channel.send('``4) i will trap her in a tower respond with : "NOOOOOOOO!"``');
                         
             break;
+	
+	case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
+            break;  
+		    
         }
         
         
@@ -57,4 +61,6 @@ function random(max,min) {
 function ping(message){
     message.channel.send('pong');
 }
-        
+var numero;
+  var noms = ["Calvin", "Laetitia", "Julien", "Leopold", "Steven"]
+  numero = Math.floor(Math.random() * (noms.length - 0) + 0);        
