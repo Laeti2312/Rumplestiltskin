@@ -30,7 +30,7 @@ bot.on('message', function (message){
                         
             break;
 	
-	case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
+	case "r!test" : message.channel.send('numero');
             break;  
 		    
         }
