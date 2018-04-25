@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.login('NDM4Mzk0ODQ3NDI3MDM1MTM2.DcEOfg.cNidQqL2BM_KkAoG2F5aQlPGUZU');
+bot.login(process.env.TOKEN);
 
 bot.on('message', function (message){
     switch(message.content.toLowerCase()){
@@ -53,7 +53,7 @@ function pong(message){
 }
 function random(max,min) {
     return Math.random() * ( max - min );
-    }
+}
 function ping(message){
     message.channel.send('pong');
 }
