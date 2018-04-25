@@ -35,7 +35,7 @@ bot.on('message', function (message){
             break;
 	
 	case "r!test" : numero = Math.floor(Math.random() * (noms.length - 0) + 0);  
-		        message.channel.send(numero);
+		        message.channel.send(noms[numero]);
             break;  
 		    
         }
