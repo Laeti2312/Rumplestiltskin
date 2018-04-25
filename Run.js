@@ -1,6 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
+var numero;
+var noms = ["Calvin", "Laetitia", "Julien", "Leopold", "Steven"]
+   
+
 bot.login(process.env.TOKEN);
 
 bot.on('message', function (message){
@@ -30,7 +34,8 @@ bot.on('message', function (message){
                         
             break;
 	
-	case "r!test" : message.channel.send('numero');
+	case "r!test" : numero = Math.floor(Math.random() * (noms.length - 0) + 0);  
+		        message.channel.send(numero);
             break;  
 		    
         }
@@ -61,6 +66,4 @@ function random(max,min) {
 function ping(message){
     message.channel.send('pong');
 }
-var numero;
-  var noms = ["Calvin", "Laetitia", "Julien", "Leopold", "Steven"]
-  numero = Math.floor(Math.random() * (noms.length - 0) + 0);        
+  
