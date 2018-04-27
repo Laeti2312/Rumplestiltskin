@@ -49,7 +49,7 @@ bot.on('message', function (message){
 		        message.channel.send(ouat[ouate]);
             break;  
 	
-	case "r!random Lion king" : lionkingg = Math.floor(Math.random() * (lionking.length - 0) + 0);  
+	case "r!random lion king" : lionkingg = Math.floor(Math.random() * (lionking.length - 0) + 0);  
 		        message.channel.send(lionking[lionkingg]);
             break;
 	
