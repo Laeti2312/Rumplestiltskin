@@ -9,7 +9,10 @@ var family = ["Acornshade","Acornstar","Adderberry","Addercloud","Addertooth","A
 
 var lionkingg;
 var lionking = ["Scar","Simba","Mufasa","Nala","Shenzi","Sarabi","Rafiki","Timon","Zazu","Ed","Shenzi clan","Banzai","Great Kings of the past","Pumbaa","Sarafina","Pride Landers","Simba Pride","Mole","Kovu","Kiara","Zira","Vitani","Nuka","Outsiders","Kion","Fuli","Askari","Bunga","Ono","Beshte","Uncle Max","Ma","Timon colony","Iron Joe","Army of Scar","Sumu","Janja","Ushari","Makucha","Kiburi","Reirei","Shupavu","Nduli","Dogo","Mzingo","The Zimwi","Makucha leap","Nne","Cheezi","Chungu","Njano","Goigoi","Dogo brothers","Tamka","Mapigano","Mpishi","Mwoga","Mzingo's parliament","Tano","Nyeusi","Uroho","Mwevi","Mwizi","Kopa","Mohatu","Lion Guard","Kopa","Jasiri","Makini","Furaha","Dhahabu","Mzaha","Mtoto","Hadari","Badili","Kifaru","Herman","Ona",];
-	    
+
+var Mazerunner;
+var Mazeruner = ["Adam","Alby","Ben","Chuck","Clint","Frankie","Frypan","Gally","George","Hank","Jeff","Minho","Newt","Nick","Stan","Stephen","Teresa","Thomas","Tim","Winston","Zart","Aris Jones","Rachel","Sonya","Harriet","Beth","A.D. Janson","Ava Paige","Brenda","Dr. Christensen","Dr. Wright","Jorge","Lisa","Alec","Baxter","Darnell","Deedee","Lana","Mark","Misty","Toad","Trina","Chancellor Kevin Anderson","Chancellor Ava Paige","The Glade","Bulb Monster","Beetle Blade","Grievers","The Trials","Assistant Director Janson","Scientist Trent","Soldier David","Pilot Tony","Nurse Lisa","Jorge","Brenda","Teresa Agnes","Thomas","Aris Jones","Rachel","WCKD"];
+	      
 bot.login(process.env.TOKEN);
 
 bot.on('message', function (message){
@@ -39,6 +42,7 @@ bot.on('message', function (message){
                         message.channel.send('``5) type r!random ouat = Say a random name from once upon a time``');
 		    	message.channel.send('``6) type r!random family tree = Say a random name from Romeo family tree``');
 		    	message.channel.send('``7) type r!random Lion king = Say a random name from The Lion king and Lion guard``');
+		    	message.channel.send('``8) type r!random maze runner = Say a random name Maze Runner``');
             break;
 	
 	case "r!random family tree" : familyt = Math.floor(Math.random() * (family.length - 0) + 0);  
@@ -53,6 +57,9 @@ bot.on('message', function (message){
 		        message.channel.send(lionking[lionkingg]);
             break;
 	
+	case "r!random maze runner" : Mazerunner = Math.floor(Math.random() * (Mazeruner.length - 0) + 0);  
+		        message.channel.send(Mazeruner[Mazerunner]);
+            break;
             	    
         }
         
