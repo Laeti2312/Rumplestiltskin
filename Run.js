@@ -65,7 +65,7 @@ bot.on('message', function (message){
 		        message.channel.send(Mazeruner[Mazerunner]);
             break;
 	
-	case "r!random Digimon" : Digimons = Math.floor(Math.random() * (Digimon.length - 0) + 0);  
+	case "r!random digimon" : Digimons = Math.floor(Math.random() * (Digimon.length - 0) + 0);  
 		        message.channel.send(Digimon[Digimons]);
             break;
             	    
