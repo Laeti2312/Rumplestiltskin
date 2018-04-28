@@ -12,7 +12,10 @@ var lionking = ["Scar","Simba","Mufasa","Nala","Shenzi","Sarabi","Rafiki","Timon
 
 var Mazerunner;
 var Mazeruner = ["Adam","Alby","Ben","Chuck","Clint","Frankie","Frypan","Gally","George","Hank","Jeff","Minho","Newt","Nick","Stan","Stephen","Teresa","Thomas","Tim","Winston","Zart","Aris Jones","Rachel","Sonya","Harriet","Beth","A.D. Janson","Ava Paige","Brenda","Dr. Christensen","Dr. Wright","Jorge","Lisa","Alec","Baxter","Darnell","Deedee","Lana","Mark","Misty","Toad","Trina","Chancellor Kevin Anderson","Chancellor Ava Paige","The Glade","Bulb Monster","Beetle Blade","Grievers","The Trials","Assistant Director Janson","Scientist Trent","Soldier David","Pilot Tony","Nurse Lisa","Jorge","Brenda","Teresa Agnes","Thomas","Aris Jones","Rachel","WCKD"];
-	      
+
+var Digimons;
+var Digimon = ["Agumon","Zamielmon","Gomamon","Terriermon","Gabumon","Patamon","Veemon","Ex-Veemon","Garurumon","Tai","T.K.","Izzy","Ken","Davis","DemiVeemon","Axemon","Wormmon","Kari Kamiya","Gatomon","Renamon","Guilmon","Henry Wong","Lopmon","Wisemon","Wizardmon","Christopher Aonuma","Jeremy Tsurgi","Mikey Kudo","Angie Hinomoto","Takato","Quartzmon","Impmon","Mimi","Sora","Biyomon","Palmon","Angemon","Angewomon","Rika","Yolei","Cody","Dorbickmon","ZekeGreymon","Matt","Shoutmon","Nene Amano","Lord Bagra","Myotismon","Olegmon","Gravimon","Omnimon","Splashmon","Whamon","PiedmonMachinedramon","Spadamon","Tactimon","Puppetmon","DemiDevimon","Cyberdramon","Harpymon","Etemon","AxeKnightmon","Cutemon","Chibitortomon","Greymon","Laylamon","Kyubimon",];
+		 
 bot.login(process.env.TOKEN);
 
 bot.on('message', function (message){
@@ -59,6 +62,10 @@ bot.on('message', function (message){
 	
 	case "r!random maze runner" : Mazerunner = Math.floor(Math.random() * (Mazeruner.length - 0) + 0);  
 		        message.channel.send(Mazeruner[Mazerunner]);
+            break;
+	
+	case "r!random Digimon" : Digimons = Math.floor(Math.random() * (Digimon.length - 0) + 0);  
+		        message.channel.send(Digimon[Digimons]);
             break;
             	    
         }
