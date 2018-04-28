@@ -46,7 +46,7 @@ bot.on('message', function (message){
 		    	message.channel.send('``6) type r!random family tree = Say a random name from Romeo family tree``');
 		    	message.channel.send('``7) type r!random Lion king = Say a random name from The Lion king and Lion guard``');
 		    	message.channel.send('``8) type r!random maze runner = Say a random name from Maze Runner``');
-		    	message.channel.send('``9) type r!random Digimon = Say a random name from Digimon``');
+		    	message.channel.send('``9) type r!random digimon = Say a random name from Digimon``');
             break;
 	
 	case "r!random family tree" : familyt = Math.floor(Math.random() * (family.length - 0) + 0);  
