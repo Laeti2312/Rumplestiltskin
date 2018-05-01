@@ -15,7 +15,10 @@ var Mazeruner = ["Adam","Alby","Ben","Chuck","Clint","Frankie","Frypan","Gally",
 
 var Digimons;
 var Digimon = ["Agumon","Zamielmon","Gomamon","Terriermon","Gabumon","Patamon","Veemon","Ex-Veemon","Garurumon","Tai","T.K.","Izzy","Ken","Davis","DemiVeemon","Axemon","Wormmon","Kari Kamiya","Gatomon","Renamon","Guilmon","Henry Wong","Lopmon","Wisemon","Wizardmon","Christopher Aonuma","Jeremy Tsurgi","Mikey Kudo","Angie Hinomoto","Takato","Quartzmon","Impmon","Mimi","Sora","Biyomon","Palmon","Angemon","Angewomon","Rika","Yolei","Cody","Dorbickmon","ZekeGreymon","Matt","Shoutmon","Nene Amano","Lord Bagra","Myotismon","Olegmon","Gravimon","Omnimon","Splashmon","Whamon","PiedmonMachinedramon","Spadamon","Tactimon","Puppetmon","DemiDevimon","Cyberdramon","Harpymon","Etemon","AxeKnightmon","Cutemon","Chibitortomon","Greymon","Laylamon","Kyubimon",];
-		 
+
+var Baltos;
+var Balto = ["
+	
 bot.login(process.env.TOKEN);
 
 bot.on('message', function (message){
@@ -38,7 +41,7 @@ bot.on('message', function (message){
         case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
             break;
 	
-        case "r!help" : message.channel.send('``1) who is "someone" = respond : how is "someone" so I can kill them. :smiling_imp:``');
+        case "r!help" : message.channel.send('``1) who is "someone" = respond : how is "someone" so I can kill them. :smiling_imp:\n rhthr``');
                         message.channel.send('``2) r!evil = respond : rate the evil of smth/someone``');
                         message.channel.send('``3) who is belle? = respond with "its my wife and a pic of belle``'); 
                         message.channel.send('``4) i will trap her in a tower respond with : "NOOOOOOOO!"``');
@@ -66,6 +69,10 @@ bot.on('message', function (message){
             break;
 	
 	case "r!random digimon" : Digimons = Math.floor(Math.random() * (Digimon.length - 0) + 0);  
+		        message.channel.send(Digimon[Digimons]);
+            break;
+
+	case "r!random balto" : Digimons = Math.floor(Math.random() * (Digimon.length - 0) + 0);  
 		        message.channel.send(Digimon[Digimons]);
             break;
             	    
