@@ -41,15 +41,15 @@ bot.on('message', function (message){
         case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
             break;
 	
-        case "r!help" : message.channel.send('``1) who is "someone" = respond : how is "someone" so I can kill them. :smiling_imp:\nrhthr``');
-                        message.channel.send('``2) r!evil = respond : rate the evil of smth/someone``');
-                        message.channel.send('``3) who is belle? = respond with "its my wife and a pic of belle``'); 
-                        message.channel.send('``4) i will trap her in a tower respond with : "NOOOOOOOO!"``');
-                        message.channel.send('``5) type r!random ouat = Say a random name from once upon a time``');
-		    	message.channel.send('``6) type r!random family tree = Say a random name from Romeo family tree``');
-		    	message.channel.send('``7) type r!random Lion king = Say a random name from The Lion king and Lion guard``');
-		    	message.channel.send('``8) type r!random maze runner = Say a random name from Maze Runner``');
-		    	message.channel.send('``9) type r!random digimon = Say a random name from Digimon``');
+        case "r!help" : message.channel.send('```1) who is "someone" = respond : how is "someone" so I can kill them. :smiling_imp:\n'+
+                        '2) r!evil = respond : rate the evil of smth/someone\n'+
+                        '3) who is belle? = respond with "its my wife and a pic of belle\n'+
+                        '4) i will trap her in a tower respond with : "NOOOOOOOO!"\n'+
+                        '5) type r!random ouat = Say a random name from once upon a time\n'+
+		    	'6) type r!random family tree = Say a random name from Romeo family tree\n'+
+		    	'7) type r!random Lion king = Say a random name from The Lion king and Lion guard\n'+
+		    	'8) type r!random maze runner = Say a random name from Maze Runner\n'+
+		    	'9) type r!random digimon = Say a random name from Digimon```');
             break;
 	
 	case "r!random family tree" : familyt = Math.floor(Math.random() * (family.length - 0) + 0);  
