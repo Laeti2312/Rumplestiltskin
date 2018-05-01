@@ -17,8 +17,8 @@ var Digimons;
 var Digimon = ["Agumon","Zamielmon","Gomamon","Terriermon","Gabumon","Patamon","Veemon","Ex-Veemon","Garurumon","Tai","T.K.","Izzy","Ken","Davis","DemiVeemon","Axemon","Wormmon","Kari Kamiya","Gatomon","Renamon","Guilmon","Henry Wong","Lopmon","Wisemon","Wizardmon","Christopher Aonuma","Jeremy Tsurgi","Mikey Kudo","Angie Hinomoto","Takato","Quartzmon","Impmon","Mimi","Sora","Biyomon","Palmon","Angemon","Angewomon","Rika","Yolei","Cody","Dorbickmon","ZekeGreymon","Matt","Shoutmon","Nene Amano","Lord Bagra","Myotismon","Olegmon","Gravimon","Omnimon","Splashmon","Whamon","PiedmonMachinedramon","Spadamon","Tactimon","Puppetmon","DemiDevimon","Cyberdramon","Harpymon","Etemon","AxeKnightmon","Cutemon","Chibitortomon","Greymon","Laylamon","Kyubimon",];
 
 var Baltos;
-var Balto;
-	
+var Balto = ["Balto","Jenna","Aleu","Aniu","Kodi","Steele","Niju","Saba","Dingo","Rosy","Boris","Star","Dixie","Sylvie","Nava","Dusty","Stella","The Red-faced pup","Kaltag","The Grizzly Bear","Balto's Father","Ralph","Kirby","Muk","Luk","Nikki","The Red-blaze pup","Nuk","Yak","Sumac","Grandma Rosy","Vike","Mel","Dipsy","Duke","Steele's Musher","Other Bull Moose","Bull Moose","Totem animals",];
+
 bot.login(process.env.TOKEN);
 
 bot.on('message', function (message){
@@ -49,7 +49,8 @@ bot.on('message', function (message){
 		    	'6) type r!random family tree = Say a random name from Romeo family tree\n'+
 		    	'7) type r!random Lion king = Say a random name from The Lion king and Lion guard\n'+
 		    	'8) type r!random maze runner = Say a random name from Maze Runner\n'+
-		    	'9) type r!random digimon = Say a random name from Digimon```');
+		    	'9) type r!random digimon = Say a random name from Digimon\n'+
+		    	'10) type r!random balto = Say a random name from Balto```');
             break;
 	
 	case "r!random family tree" : familyt = Math.floor(Math.random() * (family.length - 0) + 0);  
@@ -72,8 +73,8 @@ bot.on('message', function (message){
 		        message.channel.send(Digimon[Digimons]);
             break;
 
-	case "r!random balto" : Digimons = Math.floor(Math.random() * (Digimon.length - 0) + 0);  
-		        message.channel.send(Digimon[Digimons]);
+	case "r!random balto" : Baltos = Math.floor(Math.random() * (Balto.length - 0) + 0);  
+		        message.channel.send(Balto[Baltos]);
             break;
             	    
         }
