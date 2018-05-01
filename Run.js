@@ -41,7 +41,7 @@ bot.on('message', function (message){
         case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
             break;
 	
-        case "r!help" : message.channel.send('``1) who is "someone" = respond : how is "someone" so I can kill them. :smiling_imp:\n rhthr``');
+        case "r!help" : message.channel.send('``1) who is "someone" = respond : how is "someone" so I can kill them. :smiling_imp:\nrhthr``');
                         message.channel.send('``2) r!evil = respond : rate the evil of smth/someone``');
                         message.channel.send('``3) who is belle? = respond with "its my wife and a pic of belle``'); 
                         message.channel.send('``4) i will trap her in a tower respond with : "NOOOOOOOO!"``');
