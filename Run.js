@@ -19,7 +19,6 @@ var Digimon = ["Agumon","Zamielmon","Gomamon","Terriermon","Gabumon","Patamon","
 var Baltos;
 var Balto = ["Balto","Jenna","Aleu","Aniu","Kodi","Steele","Niju","Saba","Dingo","Rosy","Boris","Star","Dixie","Sylvie","Nava","Dusty","Stella","The Red-faced pup","Kaltag","The Grizzly Bear","Balto's Father","Ralph","Kirby","Muk","Luk","Nikki","The Red-blaze pup","Nuk","Yak","Sumac","Grandma Rosy","Vike","Mel","Dipsy","Duke","Steele's Musher","Other Bull Moose","Bull Moose","Totem animals",];
 
-const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 
 
 bot.login(process.env.TOKEN);
