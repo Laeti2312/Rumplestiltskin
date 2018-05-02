@@ -52,7 +52,8 @@ bot.on('message', function (message){
 		    	'7) type r!random Lion king = Say a random name from The Lion king and Lion guard\n'+
 		    	'8) type r!random maze runner = Say a random name from Maze Runner\n'+
 		    	'9) type r!random digimon = Say a random name from Digimon\n'+
-		    	'10) type r!random balto = Say a random name from Balto```');
+		    	'10) type r!random balto = Say a random name from Balto\n'+
+		    	'11) type r!say = make the bot talk```');
             break;
 	
 	case "r!random family tree" : familyt = Math.floor(Math.random() * (family.length - 0) + 0);  
