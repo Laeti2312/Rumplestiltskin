@@ -43,18 +43,72 @@ bot.on('message', function (message){
         case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
             break;
 	
-        case "r!help" : message.channel.send('```1) who is "someone" = respond : how is "someone" so I can kill them. :smiling_imp:\n'+
-                        '2) r!evil = respond : rate the evil of smth/someone\n'+
-                        '3) who is belle? = respond with "its my wife and a pic of belle\n'+
-                        '4) i will trap her in a tower respond with : "NOOOOOOOO!"\n'+
-                        '5) type r!random ouat = Say a random name from once upon a time\n'+
-		    	'6) type r!random family tree = Say a random name from Romeo family tree\n'+
-		    	'7) type r!random Lion king = Say a random name from The Lion king and Lion guard\n'+
-		    	'8) type r!random maze runner = Say a random name from Maze Runner\n'+
-		    	'9) type r!random digimon = Say a random name from Digimon\n'+
-		    	'10) type r!random balto = Say a random name from Balto\n'+
-		    	'11) type r!say = make the bot talk```');
-            break;
+ 	case "r!help" : message.channel.send({embed: {
+			    color: 3447003,
+			    author: {
+			      name: bot.user.username,
+			      icon_url: bot.user.avatarURL
+			    },
+			    title: "Rumplestiltskin Help commands",
+
+			    description: "Type these commands to get some help on how to use Rumplestiltskin",
+			    fields: [{
+				name: "who is "someone" ",
+				value: "respond with how is "someone" so I can kill them. :smiling_imp:"
+			      },
+			      {
+				name: "r!evil",
+				value: "rates the evil of smth/someone"
+			      },
+			      {
+				name: "who is belle?",
+				value: "respond with "its my wife and a pic of belle" "
+			      },
+			      {
+				name: "pong",
+				value: "respond with ping"
+			      },
+			      {
+				name: "i will trap her in a tower",
+				value: "respond with "NOOOOOOOO!" "
+			      },
+			      {
+				name: "r!say",
+				value: "make the bot talk"
+			      },
+			      {
+				name: "r!random lion king",
+				value: "say a random name from the Lion king and Lion guard"
+			      },
+			      {
+				name: "r!random ouat ",
+				value: "Say a random name from once upon a time"
+			      },
+			      {
+				name: "r!random family tree",
+				value: "Say a random name from Romeo's family tree"
+			      },
+			      {
+				name: "r!random maze runner",
+				value: "Say a random name from Maze Runner"
+			      },
+			      {
+				name: "r!random digimon",
+				value: "Say a random name from Digimon"
+			      },
+			      {
+				name: "r!random balto",
+				value: "Say a random name from Balto"
+			      },
+			    ],
+			    timestamp: new Date(),
+			    footer: {
+			      icon_url: bot.user.avatarURL,
+			      text: "© Rumplestiltskin"
+			    }
+			  }
+			});
+	    break;
 	
 	case "r!random family tree" : familyt = Math.floor(Math.random() * (family.length - 0) + 0);  
 		        message.channel.send(family[familyt]);
