@@ -53,8 +53,8 @@ bot.on('message', function (message){
 
 			    description: "Type these commands to get some help on how to use Rumplestiltskin",
 			    fields: [{
-				name: "who is "someone" ",
-				value: "respond with how is "someone" so I can kill them. :smiling_imp:"
+				name: "who is",
+				value: "respond with how is  so I can kill them. :smiling_imp:"
 			      },
 			      {
 				name: "r!evil",
@@ -62,7 +62,7 @@ bot.on('message', function (message){
 			      },
 			      {
 				name: "who is belle?",
-				value: "respond with "its my wife and a pic of belle" "
+				value: "respond with its my wife and a pic of belle "
 			      },
 			      {
 				name: "pong",
@@ -70,7 +70,7 @@ bot.on('message', function (message){
 			      },
 			      {
 				name: "i will trap her in a tower",
-				value: "respond with "NOOOOOOOO!" "
+				value: "respond with NOOOOOOOO!"
 			      },
 			      {
 				name: "r!say",
