@@ -53,8 +53,8 @@ bot.on('message', function (message){
 
 			    description: "Type these commands to get some help on how to use Rumplestiltskin",
 			    fields: [{
-				name: "who is",
-				value: "respond with how is  so I can kill them. :smiling_imp:"
+				name: "who is smth/someone",
+				value: "respond with how is smth/someone so I can kill them. :smiling_imp:"
 			      },
 			      {
 				name: "r!evil",
