@@ -25,7 +25,7 @@ var Balto = ["Balto","Jenna","Aleu","Aniu","Kodi","Steele","Niju","Saba","Dingo"
 
 bot.login(process.env.TOKEN);
 
-bot.on('message', function (message){
+bot.on('message', async function (message){
     switch(message.content.toLowerCase()){
         case "pong" : pong(message);
             break;
