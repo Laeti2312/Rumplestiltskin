@@ -78,30 +78,12 @@ bot.on('message', async function (message){
 				name: "r!say",
 				value: "make the bot talk"
 			      },
-			      {
-				name: "r!random lion king",
-				value: "say a random name from the Lion king and Lion guard"
-			      },
+	
 			      {
 				name: "r!random ouat ",
 				value: "Say a random name from once upon a time"
 			      },
-			      {
-				name: "r!random family tree",
-				value: "Say a random name from Romeo's family tree"
-			      },
-			      {
-				name: "r!random maze runner",
-				value: "Say a random name from Maze Runner"
-			      },
-			      {
-				name: "r!random digimon",
-				value: "Say a random name from Digimon"
-			      },
-			      {
-				name: "r!random balto",
-				value: "Say a random name from Balto"
-			      },
+			
 			      {
 				name: "r!search smth",
 				value: "google images random search smth"
