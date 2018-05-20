@@ -125,7 +125,7 @@ bot.on('message', async function (message){
     	}
         
 	
-        if (message.content.startsWith("r!kick")) {
+        if (message.content.startsWith("r!kick") && message.member.roles.find("name", "Admins")) {
 		// Easy way to get member object though mentions.
 		var member= message.mentions.members.first();
 		// Kick
