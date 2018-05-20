@@ -136,7 +136,20 @@ bot.on('message', async function (message){
 		     // Failmessage
 		    message.channel.send("Access Denied");
 		});
-	    }
+	}
+	
+	if (message.content.startsWith("r!ban") && message.member.roles.find("name", "Admins")) {
+		// Easy way to get member object though mentions.
+		var member= message.mentions.members.first();
+		// Kick
+		member.ban().then((member) => {
+		    // Successmessage
+		    message.channel.send(":wave: " + member.displayName + " has been successfully banned :ok_hand: ");
+		}).catch(() => {
+		     // Failmessage
+		    message.channel.send("Access Denied");
+		});
+	}
                         
 	if (message.content.toLowerCase().startsWith('who is ')){
             
