@@ -121,14 +121,22 @@ bot.on('message', async function (message){
 	case "r!random balto" : Baltos = Math.floor(Math.random() * (Balto.length - 0) + 0);  
 		        message.channel.send(Balto[Baltos]);
             break;    	    
-	
-    	case "r!kick" : message.author.kick();
-	    break;
     
     	}
         
 	
-        
+        if (message.content.startsWith("r!kick")) {
+		// Easy way to get member object though mentions.
+		var member= message.mentions.members.first();
+		// Kick
+		member.kick().then((member) => {
+		    // Successmessage
+		    message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+		}).catch(() => {
+		     // Failmessage
+		    message.channel.send("Access Denied");
+		});
+	    }
                         
 	if (message.content.toLowerCase().startsWith('who is ')){
             
