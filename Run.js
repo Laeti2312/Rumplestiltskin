@@ -121,8 +121,13 @@ bot.on('message', async function (message){
 	case "r!random balto" : Baltos = Math.floor(Math.random() * (Balto.length - 0) + 0);  
 		        message.channel.send(Balto[Baltos]);
             break;    	    
-        }
+	
+    	case "r!kick" : message.author.kick();
+	    break;
+    
+    	}
         
+	
         
                         
 	if (message.content.toLowerCase().startsWith('who is ')){
