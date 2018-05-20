@@ -128,14 +128,19 @@ bot.on('message', async function (message){
         if (message.content.startsWith("r!kick") && ( message.member.roles.find("name", "Admins") ||  message.member.roles.find("name", "blabla"))) {
 		// Easy way to get member object though mentions.
 		var member= message.mentions.members.first();
-		// Kick
-		member.kick().then((member) => {
-		    // Successmessage
-		    message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
-		}).catch(() => {
-		     // Failmessage
-		    message.channel.send("Access Denied");
-		});
+		if(!(member.roles.find("name", "Admins") || member.roles.find("name", "blabla"))){
+			// Kick
+			member.kick().then((member) => {
+			    // Successmessage
+			    message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+			}).catch(() => {
+			     // Failmessage
+			    message.channel.send("Access Denied");
+			});
+		} else {
+			message.channel.send("Cannot kick an admin !");
+		}
+			
 	}
 	
 	if (message.content.startsWith("r!ban") && message.member.roles.find("name", "Admins")) {
