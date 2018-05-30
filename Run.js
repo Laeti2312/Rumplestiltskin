@@ -156,10 +156,10 @@ bot.on('message', async function (message){
 		});
 	}
                         
-	if (message.content.toLowerCase().startsWith('who is ')){
+	if (message.content.toLowerCase().startsWith('how is ')){
             
             var reason = message.content.substring(7, message.content.length);
-            message.channel.send('how is ' + reason + ' so I can kill them. :smiling_imp:');
+            message.channel.send('who is ' + reason + ' so I can kill them. :smiling_imp:');
             
 	}
         if (message.content.toLowerCase().startsWith('r!evil')){
