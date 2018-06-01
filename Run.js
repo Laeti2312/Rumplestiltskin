@@ -31,7 +31,7 @@ bot.on('message', async function (message){
             break;
 
         case "r!destroy" : await sleep(500 + random(500,0));
-		    	   message.channel.send('You can't kill me...');
+		    	   message.channel.send('You cannot kill me...');
 		    	   await sleep(500 + random(500,0));
 		    	   message.channel.send('I live on Internet now!');
             break;
