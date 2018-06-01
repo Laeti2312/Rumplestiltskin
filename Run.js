@@ -30,7 +30,7 @@ bot.on('message', async function (message){
         case "pong" : pong(message);
             break;
 
-        case "r!destroy" : message.channel.send("you cannot kill me...\n"
+        case "r!destroy" : message.channel.send("you cannot kill me...\n"+
 		    	   "I live on Internet now!");
             break;
 
