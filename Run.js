@@ -30,10 +30,8 @@ bot.on('message', async function (message){
         case "pong" : pong(message);
             break;
 
-        case "r!destroy" : await sleep(500 + random(500,0));
-		    	   message.channel.send("You cannot kill me...");
-		    	   await sleep(500 + random(500,0));
-		    	   message.channel.send("I live on Internet now!");
+        case "r!destroy" : message.channel.send("you cannot kill me...\n"
+		    	   "I live on Internet now!");
             break;
 
         case "it's not creepy" : message.channel.send('you should look on your back');
