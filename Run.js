@@ -31,15 +31,12 @@ bot.on('message', async function (message){
             break;
 
         case "r!destroy" : await sleep(500 + random(500,0));
-		    	   message.channel.send('You cannot kill me...');
+		    	   message.channel.send("You cannot kill me...");
 		    	   await sleep(500 + random(500,0));
-		    	   message.channel.send('I live on Internet now!');
+		    	   message.channel.send("I live on Internet now!");
             break;
 
         case "it's not creepy" : message.channel.send('you should look on your back');
-            break;
-
-        case "projet" : message.channel.send("Car c'est notre PROJET!", {file: "https://cdn.discordapp.com/attachments/309794088931295242/345245472140689418/ezgif-3-efedfcc42f.gif"});
             break;
 	
         case "who is belle?" : message.channel.send("She is my wife, don't touch her!", {file: "https://cdn.discordapp.com/attachments/241268309956231168/438419448538464258/a20c4b5751ba86a41bff2faa72c75242--movie-once-upon-a-time.png"});
