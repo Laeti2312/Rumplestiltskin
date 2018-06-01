@@ -30,7 +30,8 @@ bot.on('message', async function (message){
         case "pong" : pong(message);
             break;
 
-        case "r!destroy" : message.channel.send("oh no... I will return");
+        case "r!destroy" : await sleep(500 + random(500,0));
+		    	   message.channel.send("oh no... I will return");
 		    	   await sleep(500 + random(500,0));
 		    	   bot.destroy();
             break;
