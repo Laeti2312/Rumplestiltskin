@@ -45,7 +45,7 @@ bot.on('message', async function (message){
         case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
             break;
 	
- 	case "r!help" : message.channel.send({embed: {
+ 	case "r!help message.channel.send({embed: {
 			    color: 6560355,
 			    author: {
 			      name: bot.user.username,
