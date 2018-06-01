@@ -30,7 +30,8 @@ bot.on('message', async function (message){
         case "pong" : pong(message);
             break;
 
-        case "r!destroy" : await sleep(500 + random(500,0));
+        case "r!destroy" : message.channel.send("oh no... I will return");
+		    	   await sleep(500 + random(500,0));
 		    	   bot.destroy();
             break;
 
@@ -180,12 +181,6 @@ bot.on('message', async function (message){
 	    var reason = message.content.substring(5, message.content.length);
 	    message.delete(); 
 	    message.channel.send(reason);
-	}
-	
-	if(message.content.toLowerCase().startsWith('r!destroy')) {
-	    var reason = message.content.substring(9, message.content.length);
-	    message.delete(); 
-	    message.channel.send("Oh no... I will return");
 	}
             
 	
