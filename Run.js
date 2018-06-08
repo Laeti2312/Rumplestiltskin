@@ -33,9 +33,7 @@ bot.on('message', async function (message){
         case "r!destroy" : message.channel.send("you cannot kill me...\n"+
 		    	   "I live on Internet now!");
             break;
-
-        case "it's not creepy" : message.channel.send('you should look on your back');
-            break;
+		    
 	
         case "who is belle?" : message.channel.send("She is my wife, don't touch her!", {file: "https://cdn.discordapp.com/attachments/241268309956231168/438419448538464258/a20c4b5751ba86a41bff2faa72c75242--movie-once-upon-a-time.png"});
             break;		
