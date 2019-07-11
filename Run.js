@@ -49,7 +49,6 @@ bot.on('message', async function (message){
 				name: "r!say",
 				value: "make the bot talk"
 			      },
-	
 			     {
 				name: "r!search smth",
 				value: "google images random search smth"
