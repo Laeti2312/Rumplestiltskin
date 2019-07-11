@@ -38,7 +38,7 @@ bot.on('message', async function (message){
         case "who is belle?" : message.channel.send("She is my wife, don't touch her!", {file: "https://cdn.discordapp.com/attachments/241268309956231168/438419448538464258/a20c4b5751ba86a41bff2faa72c75242--movie-once-upon-a-time.png"});
             break;
 	
-	case "r!evilmaster" : message.channel.send('Master is 100% Evil');
+	case "d!evilmaster" : message.channel.send('Master is 100% Evil');
             break;
 	
         case "i will trap her in a tower" : message.channel.send('NOOOOOOOO!');
