@@ -47,7 +47,7 @@ bot.on('message', async function (message){
 			      name: bot.user.username,
 			      icon_url: bot.user.avatarURL
 			    },
-			    title: "Rumplestiltskin Help commands",
+			    title: "DalekEmperor Help commands",
 
 			    description: "Type these commands to get some help on how to use Rumplestiltskin",
 			    fields: [{
@@ -88,7 +88,7 @@ bot.on('message', async function (message){
 			    timestamp: new Date(),
 			    footer: {
 			      icon_url: bot.user.avatarURL,
-			      text: "© Rumplestiltskin"
+			      text: "© DalekEmperor"
 			    }
 			  }
 			});
